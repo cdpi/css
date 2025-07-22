@@ -1,0 +1,10 @@
+
+.debug .calendar .day
+	{
+	border: 1px solid silver;
+	}
+
+.debug .calendar .day.current
+	{
+	background-color: gold;
+	}

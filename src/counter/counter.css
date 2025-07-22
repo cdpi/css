@@ -1,0 +1,21 @@
+
+.counter
+	{
+	display: inline-block;
+	}
+
+.counter + .counter
+	{
+	margin-left: 1em;
+	}
+
+.counter .count,
+.counter .label
+	{
+	display: block;
+	}
+
+.counter .count
+	{
+	font-size: 1.5em;
+	}

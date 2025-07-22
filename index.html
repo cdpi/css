@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>DEV-CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="src/dev.css">
+</head>
+<body>
+
+<header>
+	<h1>CSS</h1>
+	<input id="debug" name="debug" type="checkbox">
+	<label for="debug">debug</label>
+</header>
+
+<script>
+
+const dev =
+	{
+	calendar: true,
+	tag: false,
+	counter: false
+	};
+
+Object.getOwnPropertyNames(dev).forEach(name =>
+	{
+	if (dev[name])
+		{
+		fetch(`html/${name}.html`)
+			.then(response => response.text())
+			.then(html => document.body.insertAdjacentHTML("beforeend", html));
+		}
+	});
+
+document.addEventListener("click", e => document.body.classList.toggle("debug"), false);
+
+//document.querySelector("#debug").addEventListener("change", e => console.log(e.target.value), false);
+
+</script>
+
+</body>
+</html>

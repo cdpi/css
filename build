@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+
+uglifycss src/root.css --output css/root.min.css
+#uglifycss src/screen.css --output css/screen.min.css
+#uglifycss src/desktop.css --output css/desktop.min.css
+
+#cat css/root.min.css css/screen.min.css css/desktop.min.css > dist/monk.min.css
+cat css/root.min.css > dist/root.min.css
+
+#for f in css/root.min.css css/screen.min.css css/desktop.min.css; do
+#	cat "$f"
+#	echo
+#done > dist/monk.min.css
+
+uglifycss src/calendar/calendar.css --output css/calendar.min.css
+uglifycss src/calendar/date.css --output css/date.min.css
+
+#cat css/calendar.min.css css/date.min.css > dist/calendar.min.css
+
+for f in css/calendar.min.css css/date.min.css; do
+	cat "$f"
+	echo
+done > dist/calendar.min.css
+
+#uglifycss src/minimalist/colors.css --output css/minimalist-colors.min.css
+#uglifycss src/minimalist/calendar.css --output css/minimalist-calendar.min.css
+
+#cat css/minimalist-colors.min.css css/minimalist-calendar.min.css > dist/minimalist.min.css
+
+#for f in css/minimalist-colors.min.css css/minimalist-calendar.min.css; do
+#	cat "$f"
+#	echo
+#done > dist/minimalist.min.css
+
+#cat dist/monk.min.css dist/calendar.min.css dist/minimalist.min.css > dist/monk-full.min.css
+
+for f in dist/root.min.css dist/calendar.min.css; do
+	cat "$f"
+	echo
+done > dist/dsjfkdhfjksdhfjdfsdkjfhdkjs.min.css

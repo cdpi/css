@@ -1,0 +1,23 @@
+
+.calendar .day.past,
+.calendar .day.futur
+	{
+	color: var(--color-c);
+	}
+
+.calendar .days
+	{
+	border-bottom: 1px solid var(--color-d);
+	}
+
+.calendar .day.weekend
+	{
+	background-color: var(--color-b);
+	background-color: rgb(235, 235, 235);
+	}
+
+
+.calendar .day.current
+	{
+	background-color: var(--color-b);
+	}
