@@ -19,14 +19,6 @@
 
 @import url(themes/minimalist/minimalist.css);
 
-/*
-body
-	{
-	margin: 0;
-	touch-action: none;
-	}
-*/
-
 body
 	{
 	font-family: sans-serif;
