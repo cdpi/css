@@ -1,0 +1,2 @@
+.calendar{display:table;border-collapse:collapse}.calendar .month{text-align:center;display:table-caption}.calendar .days{display:table-row}.calendar .days div{text-align:center;padding:.25em .5em;display:table-cell}.calendar .week{display:table-row}.calendar .day{text-align:right;padding:.25em .5em;display:table-cell}
+
